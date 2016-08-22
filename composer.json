@@ -1,0 +1,38 @@
+{
+    "name": "laravel-notification-channels/maillift",
+    "description": "MailLift Notifications driver",
+    "homepage": "https://github.com/laravel-notification-channels/maillift",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel Pociot",
+            "email": "m.pociot@gmail.com",
+            "homepage": "http://www.marcelpociot.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "guzzlehttp/guzzle": "~6.0",
+        "illuminate/notifications": "^5.3",
+        "illuminate/support": "^5.1|^5.2|^5.3"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*",
+        "orchestra/testbench": "^3.3@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\MailLift\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\MailLift\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
