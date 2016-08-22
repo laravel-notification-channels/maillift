@@ -3,7 +3,6 @@
 namespace NotificationChannels\MailLift;
 
 use DateTime;
-use NotificationChannels\MailLift\Exceptions\CouldNotCreateMessage;
 
 class MailLiftMessage
 {
@@ -88,7 +87,7 @@ class MailLiftMessage
         return [
             'MessageBody' => $this->body,
             'Sender' => $this->sender,
-            'ScheduledDelivery' => $this->scheduledDelivery
+            'ScheduledDelivery' => $this->scheduledDelivery,
         ];
     }
 }
