@@ -4,7 +4,6 @@ namespace NotificationChannels\MailLift\Test;
 
 use DateTime;
 use Illuminate\Support\Arr;
-use NotificationChannels\MailLift\Exceptions\CouldNotCreateMessage;
 use NotificationChannels\MailLift\MailLiftMessage;
 
 class MessageTest extends \PHPUnit_Framework_TestCase
@@ -68,5 +67,4 @@ class MessageTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals($date->format('Y-m-d'), Arr::get($this->message->toArray(), 'ScheduledDelivery'));
     }
-
 }
