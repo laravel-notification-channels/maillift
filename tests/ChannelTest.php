@@ -23,7 +23,7 @@ class ChannelTest extends TestCase
         $client = Mockery::mock(Client::class);
         $client->shouldReceive('post')
             ->once()
-            ->with('https://api.maillift.com/2016-04-21/letter/',  Mockery::type('array'))
+            ->with('https://api.maillift.com/2016-04-21/letter/', Mockery::type('array'))
             ->andReturn($response);
         $channel = new MailLiftChannel($client);
         $channel->send(new TestNotifiable(), new TestNotification());
@@ -67,7 +67,7 @@ class TestNotifiable
      */
     public function routeNotificationForMailLift()
     {
-        return 'Laravel Notification Channels' . PHP_EOL . 'Receiver Street 123';
+        return 'Laravel Notification Channels'.PHP_EOL.'Receiver Street 123';
     }
 }
 
@@ -77,6 +77,6 @@ class TestNotification extends Notification
     public function toMailLift($notifiable)
     {
         return MailLiftMessage::create('Message body')
-            ->sender('Laravel Notification Channels'. PHP_EOL . 'Street 1');
+            ->sender('Laravel Notification Channels'.PHP_EOL.'Street 1');
     }
 }
