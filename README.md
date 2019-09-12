@@ -9,6 +9,11 @@
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/laravel-notification-channels/maillift/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/laravel-notification-channels/maillift/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/maillift.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/maillift)
 
+## Mailift EOL
+
+Mailift is no longer in operation. As a result, this channel is **deprecated**.
+
+
 This package makes it easy to create [MailLift tasks](https://maillift.com/) with Laravel 5.3.
 
 ## Contents
